@@ -1,0 +1,8 @@
+MIDlet-1: mobil01, , TELESUP.JAVA.PRINCIPAL.mobil01
+MIDlet-Jar-Size: 1669
+MIDlet-Jar-URL: luisSantos.jar
+MIDlet-Name: luisSantos
+MIDlet-Vendor: Vendor
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.1
