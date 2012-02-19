@@ -72,6 +72,13 @@ public class Mobil01 extends MIDlet implements CommandListener {
         if(c==botonejecutar){
         Ejecutar();
         }
+        if(c==botonregresarop1){
+        ventanaPrincipal();
+        }
+        if(c==botonregresarop2){
+        ventanaPrincipal();
+        }
+        
         
     }
     public void Ejecutar(){
