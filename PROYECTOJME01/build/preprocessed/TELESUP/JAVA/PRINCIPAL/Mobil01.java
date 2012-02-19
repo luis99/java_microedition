@@ -30,23 +30,20 @@ public class Mobil01 extends MIDlet implements CommandListener {
     public void ventanaopcion1(){
     pantalla=Display.getDisplay(this);
     venopcion1=new Form("Ventana Opcion2");
-    
-   botonregresarop1=new Command("regresar",Command.OK,1);
+    InsertarImagen("/foto1.png", venopcion1);
+    botonregresarop1=new Command("regresar",Command.OK,1);
     venopcion1.addCommand(botonregresarop1);
     venopcion1.setCommandListener(this);
-    
     pantalla.setCurrent(venopcion1);
      }
     public void ventanaopcion2(){
     pantalla=Display.getDisplay(this);
     venopcion2=new Form("Ventana Opcion 2");
-    pantalla.setCurrent(venopcion2);
-    
-    
-    
-   botonregresarop2=new Command("regresar",Command.OK,1);
+    InsertarImagen("/foto2.png", venopcion2);
+    botonregresarop2=new Command("regresar",Command.OK,1);
     venopcion2.addCommand(botonregresarop2);
     venopcion2.setCommandListener(this);
+    pantalla.setCurrent(venopcion2);
      }
     
     public void startApp()
@@ -90,6 +87,16 @@ public class Mobil01 extends MIDlet implements CommandListener {
         case 1: ventanaopcion2();break;
     
     }
+    
+    }
+    
+    
+    public void InsertarImagen(String imagen, Form ventana){
+        try {
+            Image img=Image.createImage(imagen);
+            ventana.append(img);
+        } catch (Exception e) {
+        }
     
     }
     
