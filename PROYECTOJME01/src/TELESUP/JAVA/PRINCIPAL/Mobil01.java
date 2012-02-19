@@ -94,8 +94,12 @@ public class Mobil01 extends MIDlet implements CommandListener {
     }
     
     
-    public void InsertarImagen(String Imagen, Form ventana){
-    
+    public void InsertarImagen(String imagen, Form ventana){
+        try {
+            Image img=Image.createImage(imagen);
+            ventana.append(img);
+        } catch (Exception e) {
+        }
     
     }
     
